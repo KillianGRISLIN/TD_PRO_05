@@ -1,0 +1,209 @@
+/* Style général */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Titre principal de la page */
+body > h1:first-child {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: 700;
+}
+
+body > p:first-of-type {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Container pour les présentations */
+.presentation-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+/* Cartes de présentation */
+.presentation-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.presentation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Styles spécifiques pour chaque personne */
+.clemence-card {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+    color: #444;
+}
+
+.florent-card {
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    color: #444;
+}
+
+.lea-card {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    color: #444;
+}
+
+.killian-card {
+    background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+    color: #444;
+}
+
+/* En-têtes dans les cartes */
+header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #ff6b6b;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Titres h2 */
+h2 {
+    color: #5a67d8;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid currentColor;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+/* Paragraphes */
+p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Listes */
+ul {
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* Sections dans les cartes */
+section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+section h2 {
+    color: #4a5568;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+/* Divs pour organiser le contenu */
+div {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+div:hover {
+    transform: translateY(-3px);
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    margin-top: 3rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    body > h1:first-child {
+        font-size: 2.2rem;
+    }
+    
+    .presentation-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .presentation-card, div {
+        padding: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    p, li {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body > h1:first-child {
+        font-size: 1.8rem;
+    }
+    
+    .presentation-card, div {
+        padding: 1rem;
+    }
+    
+    h2 {
+        font-size: 1.3rem;
+    }
+}
